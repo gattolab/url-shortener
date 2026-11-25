@@ -4,8 +4,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/gattolab/wrappp/config"
-	"github.com/gattolab/wrappp/pkg/common/exception"
+	"github.com/gattolab/url-shortener/config"
+	"github.com/gattolab/url-shortener/pkg/common/exception"
 
 	"github.com/golang-jwt/jwt/v4"
 	"github.com/google/uuid"

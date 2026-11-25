@@ -27,8 +27,8 @@ A high-performance **URL shortener** service built with Go. It converts long URL
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/gattolab/wrappp.git
-cd wrappp
+git clone https://github.com/gattolab/url-shortener.git
+cd url-shortener
 ```
 
 ### 2. Configure environment
@@ -44,7 +44,7 @@ cp .env.example .env   # adjust values as needed
 Execute the SQL script against your PostgreSQL database:
 
 ```bash
-psql -U wrappp -d wrappp -f pkg/db/migration/initail.sql
+psql -U url-shortener -d url-shortener -f pkg/db/migration/initail.sql
 ```
 
 ### 4. Run the service
@@ -57,14 +57,14 @@ Or build and run:
 
 ```bash
 make build
-./bin/wrappp
+./bin/url-shortener
 ```
 
 ### 5. Docker
 
 ```bash
-docker build -t wrappp .
-docker run -p 3000:3000 --env-file .env wrappp
+docker build -t url-shortener .
+docker run -p 3000:3000 --env-file .env url-shortener
 ```
 
 ---
@@ -89,7 +89,7 @@ GET https://wrappp.link/api/r/abc12345  →  302 https://example.com/very/long/p
 | `DATABASE_PORT` | `6432` | PostgreSQL port (PgBouncer default) |
 | `DATABASE_USER` | `postgres` | PostgreSQL user |
 | `DATABASE_PASSWORD` | `` | PostgreSQL password |
-| `DATABASE_NAME` | `wrappp` | PostgreSQL database name |
+| `DATABASE_NAME` | `url-shortener` | PostgreSQL database name |
 | `DATABASE_READ_NAME` | `` | Read-replica DB name (PgBouncer) |
 | `DATABASE_MAX_POOL_OPEN` | `50` | Max open DB connections |
 | `REDIS_ADDRESS` | `` | Redis host:port |
@@ -134,7 +134,7 @@ make lint
 
 | Target | Description |
 |---|---|
-| `make build` | Compile binary to `bin/wrappp` |
+| `make build` | Compile binary to `bin/url-shortener` |
 | `make test` | Run tests with atomic coverage |
 | `make unittest` | Run unit tests (short mode) |
 | `make coverage` | Generate `coverage.out` |

@@ -5,7 +5,7 @@ import (
 	"os"
 	"time"
 
-	myapp "github.com/gattolab/wrappp/internal/app"
+	myapp "github.com/gattolab/url-shortener/internal/app"
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/cors"
@@ -13,12 +13,12 @@ import (
 	fiberLog "github.com/gofiber/fiber/v2/middleware/logger"
 	"github.com/gofiber/fiber/v2/middleware/recover"
 
-	"github.com/gattolab/wrappp/config"
+	"github.com/gattolab/url-shortener/config"
 
-	cachePkg "github.com/gattolab/wrappp/pkg/cache"
-	"github.com/gattolab/wrappp/pkg/common/exception"
-	dbPkg "github.com/gattolab/wrappp/pkg/db"
-	loggerPkg "github.com/gattolab/wrappp/pkg/logger"
+	cachePkg "github.com/gattolab/url-shortener/pkg/cache"
+	"github.com/gattolab/url-shortener/pkg/common/exception"
+	dbPkg "github.com/gattolab/url-shortener/pkg/db"
+	loggerPkg "github.com/gattolab/url-shortener/pkg/logger"
 )
 
 type Server struct {

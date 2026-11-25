@@ -1,15 +1,15 @@
 package app
 
 import (
-	"github.com/gattolab/wrappp/config"
-	"github.com/gattolab/wrappp/pkg/cache"
-	"github.com/gattolab/wrappp/pkg/db"
-	"github.com/gattolab/wrappp/pkg/logger"
+	"github.com/gattolab/url-shortener/config"
+	"github.com/gattolab/url-shortener/pkg/cache"
+	"github.com/gattolab/url-shortener/pkg/db"
+	"github.com/gattolab/url-shortener/pkg/logger"
 	"github.com/gofiber/fiber/v2"
 
-	shorturlhandler "github.com/gattolab/wrappp/internal/usecase/shorturl/controller/http"
-	shorturlrepository "github.com/gattolab/wrappp/internal/usecase/shorturl/repository"
-	shorturlservice "github.com/gattolab/wrappp/internal/usecase/shorturl/service"
+	shorturlhandler "github.com/gattolab/url-shortener/internal/usecase/shorturl/controller/http"
+	shorturlrepository "github.com/gattolab/url-shortener/internal/usecase/shorturl/repository"
+	shorturlservice "github.com/gattolab/url-shortener/internal/usecase/shorturl/service"
 )
 
 func NewApplication(api fiber.Router, logger logger.Logger, db *db.DB, cache cache.Engine, config *config.Configuration) {

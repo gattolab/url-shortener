@@ -1,7 +1,7 @@
 package logger
 
 import (
-	"github.com/gattolab/wrappp/config"
+	"github.com/gattolab/url-shortener/config"
 
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"

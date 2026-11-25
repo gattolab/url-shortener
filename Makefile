@@ -1,4 +1,4 @@
-BINARY_NAME=wrappp
+BINARY_NAME=url-shortener
 BUILD_DIR=bin
 SRC_DIR=./cmd/
 

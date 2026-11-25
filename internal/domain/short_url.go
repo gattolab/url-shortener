@@ -4,7 +4,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/gattolab/wrappp/internal/domain/entity"
+	"github.com/gattolab/url-shortener/internal/domain/entity"
 )
 
 type ShortUrlService interface {

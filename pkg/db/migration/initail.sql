@@ -25,7 +25,7 @@ create index short_urls_active_index
     on short_urls (short_code)
     where is_active = true;
 
-alter table short_urls owner to wrappp;
+alter table short_urls owner to url-shortener;
 
 -- Function: manually call or invoke from app scheduler to purge stale/expired rows
 CREATE OR REPLACE FUNCTION cleanup_short_urls() RETURNS void

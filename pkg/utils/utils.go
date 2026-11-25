@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/gattolab/wrappp/pkg/cache"
+	"github.com/gattolab/url-shortener/pkg/cache"
 )
 
 func PrintToJSON(v interface{}) {

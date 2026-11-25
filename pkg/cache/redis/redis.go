@@ -5,7 +5,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/gattolab/wrappp/config"
+	"github.com/gattolab/url-shortener/config"
 
 	"github.com/redis/go-redis/v9"
 )

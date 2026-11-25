@@ -4,12 +4,12 @@ import (
 	"context"
 	"time"
 
-	"github.com/gattolab/wrappp/config"
-	"github.com/gattolab/wrappp/internal/domain"
-	"github.com/gattolab/wrappp/internal/domain/entity"
-	"github.com/gattolab/wrappp/pkg/cache"
-	"github.com/gattolab/wrappp/pkg/db"
-	"github.com/gattolab/wrappp/pkg/logger"
+	"github.com/gattolab/url-shortener/config"
+	"github.com/gattolab/url-shortener/internal/domain"
+	"github.com/gattolab/url-shortener/internal/domain/entity"
+	"github.com/gattolab/url-shortener/pkg/cache"
+	"github.com/gattolab/url-shortener/pkg/db"
+	"github.com/gattolab/url-shortener/pkg/logger"
 	"gorm.io/gorm"
 )
 

@@ -1,4 +1,4 @@
-module github.com/gattolab/wrappp
+module github.com/gattolab/url-shortener
 
 go 1.26.1
 

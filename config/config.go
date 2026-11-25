@@ -40,10 +40,10 @@ type DatabaseConfig struct {
 	Port     string `envconfig:"PORT" default:"6432"`
 	User     string `envconfig:"USER" default:"postgres"`
 	Password string `envconfig:"PASSWORD" default:""`
-	Database string `envconfig:"NAME" default:"wrappp"`
-	// PgBouncer routes read traffic by dbname (e.g. "wrappp_read")
+	Database string `envconfig:"NAME" default:"url-shortener"`
+	// PgBouncer routes read traffic by dbname (e.g. "url-shortener_read")
 	// on the same host:port. Leave empty to disable read/write splitting.
-	ReadDatabase    string `envconfig:"READ_NAME" default:""`       // e.g. "wrappp_read"
+	ReadDatabase    string `envconfig:"READ_NAME" default:""`       // e.g. "url-shortener_read"
 	Standalone      bool   `envconfig:"STANDALONE" default:"false"` // set true to force single pool (ignore ReadDatabase)
 	MaxPoolOpen     int    `envconfig:"MAX_POOL_OPEN" default:"50"`
 	MaxPoolIdle     int    `envconfig:"MAX_POOL_IDLE" default:"10"`

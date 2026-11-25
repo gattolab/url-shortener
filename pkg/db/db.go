@@ -6,8 +6,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/gattolab/wrappp/config"
-	"github.com/gattolab/wrappp/pkg/common/exception"
+	"github.com/gattolab/url-shortener/config"
+	"github.com/gattolab/url-shortener/pkg/common/exception"
 	driver "gorm.io/driver/postgres"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"
@@ -55,7 +55,7 @@ func NewDB(conf config.DatabaseConfig) (*DB, error) {
 		},
 	)
 
-	// Write DSN — same host:port, dbname = "wrappp"
+	// Write DSN — same host:port, dbname = "url-shortener"
 	writeDSN := buildDSN(conf.Host, conf.Port, conf.User, conf.Password, conf.Database)
 
 	db, err := gorm.Open(driver.Open(writeDSN), &gorm.Config{
@@ -73,9 +73,9 @@ func NewDB(conf config.DatabaseConfig) (*DB, error) {
 
 	// Enable read/write splitting when:
 	//   - Standalone is false, AND
-	//   - ReadDatabase is set (e.g. "wrappp_read")
+	//   - ReadDatabase is set (e.g. "url-shortener_read")
 	if !conf.Standalone && conf.ReadDatabase != "" {
-		// Read DSN — same host:port, dbname = "wrappp_read"
+		// Read DSN — same host:port, dbname = "url-shortener_read"
 		readDSN := buildDSN(conf.Host, conf.Port, conf.User, conf.Password, conf.ReadDatabase)
 
 		err = db.Use(

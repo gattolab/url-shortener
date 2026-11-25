@@ -3,9 +3,9 @@ package cache
 import (
 	"time"
 
-	"github.com/gattolab/wrappp/config"
-	"github.com/gattolab/wrappp/pkg/cache/inmem"
-	"github.com/gattolab/wrappp/pkg/cache/redis"
+	"github.com/gattolab/url-shortener/config"
+	"github.com/gattolab/url-shortener/pkg/cache/inmem"
+	"github.com/gattolab/url-shortener/pkg/cache/redis"
 )
 
 type Engine interface {

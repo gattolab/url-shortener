@@ -6,7 +6,7 @@ import (
 	"runtime"
 	"syscall"
 
-	"github.com/gattolab/wrappp/pkg/server"
+	"github.com/gattolab/url-shortener/pkg/server"
 )
 
 func init() {

@@ -9,8 +9,8 @@ import (
 
 	gormLogger "gorm.io/gorm/logger"
 
-	"github.com/gattolab/wrappp/internal/domain"
-	"github.com/gattolab/wrappp/internal/domain/entity"
+	"github.com/gattolab/url-shortener/internal/domain"
+	"github.com/gattolab/url-shortener/internal/domain/entity"
 	"github.com/stretchr/testify/assert"
 	"go.uber.org/zap/zapcore"
 

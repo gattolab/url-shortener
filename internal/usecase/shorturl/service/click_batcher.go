@@ -5,8 +5,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/gattolab/wrappp/internal/domain"
-	"github.com/gattolab/wrappp/pkg/logger"
+	"github.com/gattolab/url-shortener/internal/domain"
+	"github.com/gattolab/url-shortener/pkg/logger"
 )
 
 const (
